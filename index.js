@@ -13,30 +13,30 @@ document.addEventListener("keypress", function (event) {
 
 function hitIt(key) {
   switch (key) {
-    case "w":
+    case "a":
       var tom1 = new Audio("sounds/tom-1.mp3");
       tom1.play();
       break;
-    case "a":
+    case "s":
       var tom2 = new Audio("sounds/tom-2.mp3");
       tom2.play();
       break;
-    case "s":
+    case "d":
       var tom3 = new Audio("sounds/tom-3.mp3");
       tom3.play();
       break;
 
-    case "d":
+    case "j":
       var tom4 = new Audio("sounds/tom-4.mp3");
       tom4.play();
       break;
 
-    case "j":
+    case "k":
       var crash = new Audio("sounds/crash.mp3");
       crash.play();
       break;
 
-    case "k":
+    case " ":
       var kickBass = new Audio("sounds/kick-bass.mp3");
       kickBass.play();
       break;

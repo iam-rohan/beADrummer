@@ -35,16 +35,12 @@ footer {
   background: url("images/crash.png");
 }
 
-.k {
-  background: url("images/kick.png");
-}
-
 .l {
   background: url("images/snare.png");
 }
 
 .set {
-  margin: 10% auto;
+  margin: 6% auto;
 }
 
 .game-over {
@@ -77,4 +73,9 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.space {
+  background: url("images/kick.png");
+  font-size: 2.7rem;
 }
