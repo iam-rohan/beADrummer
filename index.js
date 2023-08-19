@@ -2,13 +2,14 @@ var buttons = document.querySelectorAll(".drum");
 
 for (let i = 0; i < buttons.length; i++)
   buttons[i].addEventListener("click", function () {
-    //alert("Yes that was a smash!");
     var buttonInnerHTML = this.innerHTML;
     hitIt(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
   });
 
 document.addEventListener("keypress", function (event) {
   hitIt(event.key);
+  buttonAnimation(event.key);
 });
 
 function hitIt(key) {
@@ -50,4 +51,17 @@ function hitIt(key) {
       console.log(buttonInnerHTML);
       break;
   }
+}
+
+function buttonAnimation(currentKey) {
+  var activeButton;
+
+  if (currentKey === " ")
+    activeButton = document.querySelector('.space');
+  else 
+    activeButton = document.querySelector("." + currentKey); 
+  activeButton.classList.add("pressed");
+  setTimeout(function() {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
